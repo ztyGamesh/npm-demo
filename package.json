@@ -1,0 +1,21 @@
+{
+  "name": "yangyang-npm-a",
+  "version": "1.0.1",
+  "description": "zty npm test",
+  "main": "./dist/library.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "add,minus,multiply,division"
+  ],
+  "author": "zty",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "lodash": "^4.17.19"
+  }
+}
