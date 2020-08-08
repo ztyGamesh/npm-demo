@@ -8,3 +8,6 @@ npm version preminor // 1.1.0-0 后面多了个0，表示预发布
 
 # 发布
 npm publish
+
+# 撤销
+npm unpublish packageName --force
