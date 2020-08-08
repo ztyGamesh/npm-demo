@@ -10,3 +10,7 @@ export function multiply(a, b) {
 export function division(a, b) {
     return a / b;
 }
+
+export function randomNum() {
+    return Number(Math.random() * 100);
+}
