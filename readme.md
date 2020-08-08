@@ -11,3 +11,21 @@ npm publish
 
 # 撤销
 npm unpublish packageName --force
+
+# scripts in NPM
+- prepare
+会在打包和发布包之前以及本地npm install时运行。
+
+- prepublishOnly
+在prepare script运行之前运行，并且仅在npm publish运行。
+可以运行npm run test & npm run lint以确保不会发布错误的不规范的代码。
+
+- preversion
+在发布新版本包之前运行，为了更加确保新版本包的代码规范。npm run lint
+
+- version
+在发布新版本包之后运行。如果您的包有关联远程git仓库，每次发布新版本时都会生成一个提交和一个新的版本标记。
+那么就可以在此规范代码的命令。
+
+- postversion
+在发布新版本包之后运行，在git commit 之后运行，适合推送。
